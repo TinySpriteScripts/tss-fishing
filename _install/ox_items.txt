@@ -1,0 +1,54 @@
+-- sayer-fishing	
+
+["fish"] = {
+    label = "Fish", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "fish.png" }
+},
+["killerwhalemeat"] = {
+    label = "killerwhalemeat", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "killerwhalemeat.png" }
+},
+["stingraymeat"] = {
+    label = "stingraymeat", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "stingraymeat.png" }
+},
+["tigersharkmeat"] = {
+    label = "tigersharkmeat", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "tigersharkmeat.png" }
+},
+["catfish"] = {
+    label = "catfish", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "catfish.png" }
+},
+["salmon"] = {
+    label = "salmon", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "salmon.png" }
+},
+["largemouthbass"] = {
+    label = "largemouthbass", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "largemouthbass.png" }
+},
+["goldfish"] = {
+    label = "goldfish", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "goldfish.png" }
+},
+["redfish"] = {
+    label = "redfish", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "redfish.png" }
+},
+["bluefish"] = {
+    label = "bluefish", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "bluefish.png" }
+},
+["stripedbass"] = {
+    label = "stripedbass", weight = 1, stack = true, close = true, description = "Fish for Fishing.",
+    client = { image = "stripedbass.png" }
+},
+["fishingrod"] = {
+    label = "Fishing Rod", weight = 1, stack = true, close = true, description = "A fishing rod for adventures with friends!!",
+    client = { image = "fishingrod.png" }
+},
+["fishingbait"] = {
+    label = "Fish Bait", weight = 1, stack = true, close = true, description = "A fish bait",
+    client = { image = "fishbait.png" }
+},

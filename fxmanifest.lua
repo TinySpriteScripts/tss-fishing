@@ -1,15 +1,16 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'sayer-Fishing'
-version '1.1.0'
+author 'TinySpriteScripts'
+description 'tss-fishing'
+version '2.0.0'
 
 shared_scripts {
-	'config.lua'
+	'config.lua',
+	'@jim_bridge/starter.lua',
 }
 
 client_scripts {
-	'client/functions.lua',
 	'client/main.lua'
 }
 
@@ -18,3 +19,6 @@ server_scripts {
 }
 
 lua54 'yes'
+
+
+dependency 'jim_bridge'

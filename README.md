@@ -1,33 +1,72 @@
-# sayer-fishing
-Fishing For QBCore
+# [`tss-skills`] by [TinySprite Scripts (TSS)](https://tinysprite-scripts.tebex.io/) | [Discord](https://discord.gg/ZMFfC54FdJ) | [Support Us](https://ko-fi.com/tinyspritescripts)
 
-Original by Evilanious - link to the original found here - https://github.com/MrEvilGamer/qb-fishing
+Relaxed Fishing For FiveM - fully converted from original
 
-i just rewrote parts and added some cool things that i liked. 
+Original by Evilanious - link to the original found here - https://github.com/MrEvilGamer/qb-fishing 
+---
 
-## Make sure to add the shard.lua in your qb-core/shared/items.lua
-```lua
- --sayer-fishing
-    fish 			 		 	 = {["name"] = "fish", 							["label"] = "Fish",                     ["weight"] = 1100,      ["type"] = "item",      ["image"] = "fish.png",                 ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    killerwhalemeat 			 = {["name"] = "killerwhalemeat", 				["label"] = "killerwhalemeat",          ["weight"] = 1100,      ["type"] = "item",      ["image"] = "killerwhalemeat.png",      ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["stingraymeat"] 			     = {["name"] = "stingraymeat", 				    ["label"] = "stingraymeat",              ["weight"] = 1111,      ["type"] = "item",      ["image"] = "stingraymeat.png",         ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["tigersharkmeat"] 			     = {["name"] = "tigersharkmeat", 				["label"] = "tigersharkmeat",            ["weight"] = 1111,      ["type"] = "item",      ["image"] = "tigersharkmeat.png",       ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["catfish"] 			         = {["name"] = "catfish", 				        ["label"] = "catfish",                   ["weight"] = 1111,      ["type"] = "item",      ["image"] = "catfish.png",              ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["salmon"] 			             = {["name"] = "salmon", 				        ["label"] = "salmon",                    ["weight"] = 1111,      ["type"] = "item",      ["image"] = "salmon.png",               ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["largemouthbass"] 			     = {["name"] = "largemouthbass", 				["label"] = "largemouthbass",            ["weight"] = 1111,      ["type"] = "item",      ["image"] = "largemouthbass.png",       ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["goldfish"] 			         = {["name"] = "goldfish", 			        	["label"] = "goldfish",                  ["weight"] = 1111,      ["type"] = "item",      ["image"] = "goldfish.png",             ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["redfish"] 			         = {["name"] = "redfish", 			        	["label"] = "redfish",                   ["weight"] = 1111,      ["type"] = "item",      ["image"] = "redfish.png",              ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["bluefish"] 			         = {["name"] = "bluefish", 			        	["label"] = "bluefish",                  ["weight"] = 1111,      ["type"] = "item",      ["image"] = "bluefish.png",             ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["stripedbass"] 			     = {["name"] = "stripedbass", 			        ["label"] = "stripedbass",               ["weight"] = 1111,      ["type"] = "item",      ["image"] = "stripedbass.png",          ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fish for Fishing."},
-    ["fishingrod"] 			 		 = {["name"] = "fishingrod", 					["label"] = "Fishing Rod", 				["weight"] = 5000, 		["type"] = "item", 		["image"] = "fishingrod.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "A fishing rod for adventures with friends!!"},	
-    ["fishingbait"] 			 	 = {["name"] = "fishingbait", 					["label"] = "Fish Bait", 				["weight"] = 400, 		["type"] = "item", 		["image"] = "fishbait.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "A fish bait"},
-```
+## 🔧 Support
+Need help with setup or encountering issues? Join our Discord: [Join Support Server](https://discord.gg/ZMFfC54FdJ)
 
-Add This to your qb-core/config.lua in metadata
-```lua
---fishing
-    sayerfishingxp = 0
-    sayerfishinglevel = 1
-```
+---
 
-Configure script to your liking!
+## ❤️ Credits
+- [Jimathy](https://discord.gg/xKgQZ6wZvS) for his bridge
+
+---
+
+## 🧰 Installation
+
+1. Create a folder called `[tinysprite]` in your server resources directory (if not already existing)
+2. Place the `tss-fishing` resource in that subfolder
+3. Ensure it is started in your `server.cfg`:
+   ```cfg
+   ensure [tinysprite]
+   ```
+4. Add the items from `_install/items` to your item management script
+5. Configure script to your liking
+
+---
+
+## 📦 Dependencies
+- [jim-bridge](https://github.com/jimathy/jim_bridge)
+- [ox_lib](https://github.com/overextended/ox_lib)
+
+---
+
+## ✨ Features
+- Relaxed Fishing Script
+   - Designed as a relaxing activity
+ - Customisable Items
+   - Have as many or as little amount of rods and baits as you like
+ - Configurable Minigame
+   - uses jim bridge to bring multiple minigames to your server
+ - Performance Friendly
+   - Data caching for optimum performance
+   - zero database calls
+ - Multi Framework
+  - Utilising jim-bridge to bring our scripts to multiple frameworks
+ - Optional Skill System
+  - Use `tss-skills` or configure your own skill script
+
+
+---
+
+## 📬 Contact
+
+- Tebex: [https://yourstorelink.com](https://tinysprite-scripts.tebex.io/)
+- Discord: [TinySprite Scripts](https://discord.gg/ZMFfC54FdJ)
+- Ko-fi: [https://ko-fi.com/tinyspritescripts](https://ko-fi.com/tinyspritescripts)
+
+---
+
+## 🧾 Changelog
+
+### v1.2
+- Initial tss release
+- Key features listed
+- jim-bridge intergration
+
+---
+
+**© TinySprite Scripts** — Quality resources built for FiveM servers.
