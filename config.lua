@@ -1,3 +1,8 @@
+-- to start fishing stand facing water, 
+-- use your rod item, 
+-- once prompted by notify use the bait item
+-- to cancel use rod item again
+
 Config = {
     System = {
         Debug = true,            -- set true to view target/ped areas

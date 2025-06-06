@@ -1,13 +1,19 @@
 local SelectedBait = nil
 local isFishing = false
+local CancelNextCast = false
 cachedData = {}
 
 onPlayerLoaded(function()
     debugPrint("player has loaded")
 end, true)
 
+local function CancelFishing()
+    CancelNextCast = true
+    triggerNotify("Fishing", "Stopping Cast", 'success')
+end
 
 RegisterNetEvent("sayer-fishing:tryToFish", function(rod)
+    if isFishing then CancelFishing() return end
 	TryToFish(rod) 
 end)
 
@@ -190,6 +196,7 @@ end)
 
 function CastBait(rodHandle, castLocation, notFirst, rod)
     if isFishing then return end
+    if not hasItem(rod, 1) then triggerNotify("Fishing", "Rod isnt in your inventory", 'error') return end
     isFishing = true
 
     local startedCasting = GetGameTimer()
@@ -209,7 +216,7 @@ function CastBait(rodHandle, castLocation, notFirst, rod)
             triggerNotify("Fishing",'Ran out of bait', 'error')
         end
         SelectedBait = nil
-
+        CancelNextCast = false
         isFishing = false
         return DeleteEntity(rodHandle)
     end
@@ -249,11 +256,13 @@ function CastBait(rodHandle, castLocation, notFirst, rod)
 
     RemoveLoadingPrompt()
 
-    if interupted then
+    if interupted or CancelNextCast then
         ClearPedTasks(cachedData["ped"])
 
         isFishing = false
-        CastBait(rodHandle, castLocation, true, rod)
+        CancelNextCast = false
+        SelectedBait = nil
+        -- CastBait(rodHandle, castLocation, true, rod)
         return DeleteEntity(rodHandle)
     end
 
